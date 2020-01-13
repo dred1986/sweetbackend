@@ -1,0 +1,61 @@
+{
+  "connection": "default",
+  "collectionName": "proportions",
+  "info": {
+    "name": "proportion",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "proportion": {
+      "type": "string"
+    },
+    "x": {
+      "type": "integer"
+    },
+    "y": {
+      "type": "integer"
+    },
+    "z": {
+      "type": "integer"
+    },
+    "countmin": {
+      "type": "integer"
+    },
+    "countmax": {
+      "type": "integer"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "shape": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "type": {
+      "type": "string"
+    },
+    "letter": {
+      "type": "string"
+    },
+    "construct": {
+      "type": "boolean",
+      "default": true
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "proportions"
+    }
+  }
+}

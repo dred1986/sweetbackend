@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tomanies",
+      "handler": "Tomany.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tomanies/count",
+      "handler": "Tomany.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tomanies/:id",
+      "handler": "Tomany.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tomanies",
+      "handler": "Tomany.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tomanies/:id",
+      "handler": "Tomany.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tomanies/:id",
+      "handler": "Tomany.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

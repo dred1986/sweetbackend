@@ -1,0 +1,81 @@
+{
+  "connection": "default",
+  "collectionName": "items",
+  "info": {
+    "name": "item",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "weight": {
+      "type": "integer"
+    },
+    "size_width": {
+      "type": "integer"
+    },
+    "size_height": {
+      "type": "integer"
+    },
+    "size_length": {
+      "type": "integer"
+    },
+    "chocolate": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "discount": {
+      "type": "integer"
+    },
+    "taste": {
+      "type": "string"
+    },
+    "difficult": {
+      "type": "float"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "letter": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "integer",
+      "default": "1"
+    },
+    "construct": {
+      "default": true,
+      "type": "boolean"
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "items"
+    },
+    "editable": {
+      "type": "boolean"
+    },
+    "products": {
+      "collection": "product",
+      "via": "items"
+    },
+    "shelflife": {
+      "type": "integer"
+    }
+  }
+}

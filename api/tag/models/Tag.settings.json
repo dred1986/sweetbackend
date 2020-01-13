@@ -1,0 +1,36 @@
+{
+  "connection": "default",
+  "collectionName": "tags",
+  "info": {
+    "name": "tag",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "proportions": {
+      "collection": "proportion",
+      "dominant": true,
+      "via": "tags"
+    },
+    "Products": {
+      "collection": "product",
+      "dominant": true,
+      "via": "tags"
+    },
+    "items": {
+      "collection": "item",
+      "dominant": true,
+      "via": "tags"
+    }
+  }
+}

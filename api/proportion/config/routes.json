@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/proportions",
+      "handler": "Proportion.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/proportions/count",
+      "handler": "Proportion.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/proportions/:id",
+      "handler": "Proportion.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/proportions",
+      "handler": "Proportion.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/proportions/:id",
+      "handler": "Proportion.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/proportions/:id",
+      "handler": "Proportion.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

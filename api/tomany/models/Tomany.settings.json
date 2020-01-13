@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "tomanies",
+  "info": {
+    "name": "tomany",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "shit": {
+      "model": "shit",
+      "via": "tamanies"
+    }
+  }
+}

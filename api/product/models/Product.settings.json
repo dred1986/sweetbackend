@@ -1,0 +1,59 @@
+{
+  "connection": "default",
+  "collectionName": "products",
+  "info": {
+    "name": "product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "show": {
+      "type": "boolean"
+    },
+    "schema": {
+      "type": "string"
+    },
+    "uptoyou": {
+      "type": "boolean"
+    },
+    "comment": {
+      "type": "text"
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "Products"
+    },
+    "proportion": {
+      "model": "proportion"
+    },
+    "construct": {
+      "default": true,
+      "type": "boolean"
+    },
+    "user": {
+      "model": "user",
+      "via": "product",
+      "plugin": "users-permissions"
+    },
+    "items": {
+      "collection": "item",
+      "dominant": true,
+      "via": "products"
+    }
+  }
+}
